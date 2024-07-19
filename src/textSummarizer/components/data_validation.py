@@ -11,7 +11,7 @@ class DataValiadtion:
     def validate_all_files_exist(self)-> bool:
         try:
             validation_status = None
-            os.makedirs(os.path.dirname(self.config.STATUS_FILE), exist_ok=True)
+
             all_files = os.listdir(os.path.join("artifacts","data_ingestion","samsum_dataset"))
 
             for file in all_files:
